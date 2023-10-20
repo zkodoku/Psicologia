@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: auto;
+    padding: 0;
+    font-size: 20px;
+    z-index: auto;
+}
+/*
+.header{
+    font-family: 'Poppins', sans-serif;
+    background-color: #6713d2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 10vh;
+    padding: 5px 3%;
+}
+
+.header .logo{
+    cursor: pointer;
+    margin-right: auto;
+    transition: all 0.3s ease-in;
+}
+
+.header .logo a{
+    font-size: 1.5em;
+    height: 100px;
+    width: auto;
+    color: white;
+    font-weight: 700;
+}
+.header .logo:hover {
+    transform: scale(1.1);
+}
+
+.header .nav-links{
+    list-style: none;
+}
+
+.header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;  
+    transition: all 0.2s ease-in;  
+}
+
+.header .nav-links li:hover{
+    transform: scale(1.1);
+}
+
+.header .nav-links a{
+    font-size: 700;
+    color: white;
+    text-decoration: none;
+    transition: all 0.2s ease-in;
+}
+
+.header .nav-links li a:hover{
+    color: rgb(218, 24, 218);
+}
+
+.header .btn button{
+    margin-left: 20px;
+    font-weight: 700;
+    color: #c924bb;
+    padding: 9px 25px;
+    background: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+
+.header .btn button:hover{
+    background-color: #c924bb;
+    color: white;
+    transform: scale(1.1);
+}
+*/
+.linkmenu, .logo {
+    text-decoration: none;
+    color: #1f1235;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  
+  /* nav styles */
+  
+  nav {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    background: transparent;
+    position: fixed;
+    transition: 0.5 ease-in;
+  }
+
+  .abajo {
+    background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(0, 0, 0, 0.1) 100%);
+  }
+  
+  .logo {
+    text-align: left;
+    font-size: 1.5rem;
+    color: #1f1235;
+    font-weight: 800;
+    transition: 0.1s ease-in;
+    margin-left: 10vh;
+  }
+  
+  .logo:hover {
+    transform: scale(1.02);
+    color: #eebbc3;
+  }
+  
+  .hamburger {
+    cursor: pointer;
+  }
+  
+  .hamburger .line {
+    display: block;
+    width: 40px;
+    height: 5px;
+    margin-bottom: 10px;
+    background-color: #1f1235;
+  }
+  
+  .nav__link {
+    position: fixed;
+    width: 100%;
+    top: 5rem;
+    left: 18px;
+    margin-left: 10vh;
+    background: transparent;
+  }
+  
+  #boton {
+    border: 2px solid #1f1235;
+    border-radius: 2em;
+    padding: 5px 10px 5px 10px;
+  }
+
+  #boton:hover {
+    background-color: #eebbc3;
+    color: #1f1235;
+    border: 2px solid #1f1235;
+  }
+  
+  .nav__link a {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    transition: 0.2s ease-in;
+    font-size: 0.9em;
+  }
+  
+  .nav__link a:hover {
+    transform: scale(1.1);
+    color:  #eebbc3;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .nav__link {
+      display: block;
+      position: static;
+      width: auto;  
+      margin-right: 20px;
+      background: none;
+    }
+  
+    .nav__link a {
+      display: inline-block;
+      padding: 15px 20px;
+    }
+  
+    .hamburger {
+      display: none;
+    }
+  }
+/* Primera seccion */
+.primera {
+    background-image: url(img/bg1.svg);
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text1 {
+  flex: 1;
+  text-align: left;
+  color: #1f1235;
+  margin-left: 13vh;
+}
+
+.t1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 3em;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.t2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3em;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.image1 {
+  flex: 1;
+  text-align: right;
+  padding: 20px;
+  margin-right: 20vh;
+}
+.i1 {
+  height: auto;
+  max-width: 70%;
+}
+
+/* segunda seccion */
+.segunda {
+    width: 100%;
+    height: 100vh;
+    background: url(img/bg2.svg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+.conts2 {
+  text-align: center;
+}
+.t3 {
+  font-size: 3em;
+  font-weight: 500;
+  color: #1f1135;
+  font-family: 'Roboto Slab', serif;
+  margin-bottom: 0.3em;
+  
+}
+.cita {
+  background: white;
+  font-family: inherit;
+  padding: 0.6em 1.3em;
+  font-weight: 900;
+  font-size: 1.7rem;
+  border: 3px solid black;
+  border-radius: 0.4em;
+  box-shadow: 0.1em 0.1em;
+  font-family: 'Roboto Slab', serif;
+  text-transform: uppercase;
+}
+
+.cita:hover {
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em;
+}
+
+.cita:active {
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em;
+}
+
+/* tercera seccion */
+.tercera {
+  width: 100%;
+  height: 100vh;
+  background-image: url(img/bg3.svg);
+  background-position: center;
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tarjetas {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  margin-top: 10vh;
+  display: inline-block;
+  width: 28%;
+  height: 60vh;
+  font-size: 16px;
+  background-color: #f3d2c1;
+  border-radius: 1em;
+  text-align: center;
+  margin-bottom: 10vh;
+}
+
+.card h2 {
+  color: #530f68;
+  font-size: 2em;
+  margin-top: 2vh;
+  text-transform: uppercase;
+}
+
+.card h3 {
+  text-align: center;
+  font-size: 1.7em;
+  margin-left: 4vh;
+  margin-right: 4vh;
+  margin-top: 3vh;
+  font-weight: 600;
+}
+
+/* Cuarta seccion */
+.cuarta {
+  width: 100%;
+  height: 100vh;
+  background-image: url(img/bg4.svg);
+  background-position: center;
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cuarta h1 {
+  flex: 1;
+  text-align: left;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  font-size: 2.5rem;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  min-width: 50vw;
+}
+
+.image2 {
+  flex: 1;
+  text-align: right;
+  padding: 20px;
+  margin-right: 40vh;
+}
+
+.i2 {
+  height: auto;
+  width: 15vw;
+}
+
+.cuarta a:hover {
+  color: #ff6e6c;
+}
